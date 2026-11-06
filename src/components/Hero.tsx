@@ -9,17 +9,14 @@ import {
   Linkedin,
   Mail,
   FileText,
-  Sparkles,
   ArrowDown,
-  CheckCircle2,
 } from 'lucide-react';
 
 interface HeroProps {
   onOpenResume: () => void;
-  onOpenAudit: () => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ onOpenResume, onOpenAudit }) => {
+export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
   return (
     <section id="about" className="pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,13 +37,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume, onOpenAudit }) => {
             <span>CGPA: {PERSONAL_INFO.cgpa}</span>
           </span>
 
-          <button
-            onClick={onOpenAudit}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium text-[#78716C] bg-[#F2EEE7] hover:bg-[#E8E4DC] hover:text-[#1C1A17] transition-all cursor-pointer"
-          >
-            <Sparkles className="w-3.5 h-3.5 text-amber-600" />
-            <span>100% Resume Grounded</span>
-          </button>
+
         </motion.div>
 
         {/* Main Name & Headline */}
