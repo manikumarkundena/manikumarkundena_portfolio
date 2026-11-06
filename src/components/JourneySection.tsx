@@ -66,7 +66,7 @@ export const JourneySection: React.FC = () => {
                   </p>
                   <p className="text-xs text-[#78716C] mt-1 flex items-center gap-1">
                     <MapPin className="w-3.5 h-3.5" />
-                    {PERSONAL_INFO.location}
+                    Tumakuru, Karnataka, India
                   </p>
                 </div>
               </div>
@@ -81,7 +81,7 @@ export const JourneySection: React.FC = () => {
                 </div>
                 <div className="px-3 py-1.5 rounded-lg bg-[#16A34A]/10 text-[#15803D] text-xs font-bold flex items-center gap-1">
                   <Award className="w-4 h-4" />
-                  <span>Top Academic Standing</span>
+                  <span>Academic Performance</span>
                 </div>
               </div>
 
@@ -94,7 +94,7 @@ export const JourneySection: React.FC = () => {
                   {[
                     'Data Structures & Algorithms',
                     'Object Oriented Programming (Java/C++)',
-                    'Mobile Application Development',
+                    'Web and Backend Development',
                     'Database Management Systems',
                     'Software Engineering Fundamentals',
                   ].map((course) => (
@@ -121,12 +121,12 @@ export const JourneySection: React.FC = () => {
             <div className="flex items-center gap-2 mb-6">
               <FileCheck className="w-5 h-5 text-[#2563EB]" />
               <h3 className="text-lg font-bold text-[#1C1A17]">
-                Verified Certifications & Badges
+                Learning, Programs & Recognition
               </h3>
             </div>
 
             <p className="text-xs text-[#78716C] mb-6 leading-relaxed">
-              Strictly grounded in resume records. No fabricated cloud architecture certificates or unearned credentials.
+              A mix of completed learning, program selection, and academic recognition.
             </p>
 
             <div className="space-y-4">

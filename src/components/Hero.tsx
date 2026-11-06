@@ -76,7 +76,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume, onOpenAudit }) => {
               transition={{ duration: 0.5, delay: 0.25 }}
               className="mt-4 text-base text-[#78716C] leading-relaxed max-w-2xl"
             >
-              My work focuses on practical Android mobile applications, intuitive web portals, AI prompt workflows, and developer utilities that help students and organizers work more effectively.
+              My work focuses on web applications, backend APIs, Java-based software, and practical AI-assisted tools. I am also learning Spring Boot and strengthening my backend engineering foundations.
             </motion.p>
 
             {/* CTAs & Social Links */}

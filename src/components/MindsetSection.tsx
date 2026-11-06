@@ -1,34 +1,21 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { MY_INTERESTS } from '../data/resumeData';
-import {
-  Bot,
-  Smartphone,
-  Wrench,
-  Zap,
-  BookOpen,
-  Layout,
-  HeartHandshake,
-  Compass,
-} from 'lucide-react';
+import { Bot, Code2, Server, Wrench, BookOpen, Compass } from 'lucide-react';
 
 export const MindsetSection: React.FC = () => {
   const getInterestIcon = (title: string) => {
     switch (title) {
-      case 'Artificial Intelligence':
+      case 'Applied AI':
         return <Bot className="w-5 h-5 text-[#2563EB]" />;
-      case 'Android Development':
-        return <Smartphone className="w-5 h-5 text-[#16A34A]" />;
-      case 'Developer Tools':
-        return <Wrench className="w-5 h-5 text-[#EA580C]" />;
-      case 'Intelligent Automation':
-        return <Zap className="w-5 h-5 text-amber-600" />;
+      case 'Backend Engineering':
+        return <Server className="w-5 h-5 text-[#16A34A]" />;
+      case 'Software Development':
+        return <Code2 className="w-5 h-5 text-[#EA580C]" />;
+      case 'Developer Experience':
+        return <Wrench className="w-5 h-5 text-amber-600" />;
       case 'Educational Technology':
         return <BookOpen className="w-5 h-5 text-indigo-600" />;
-      case 'Productivity Software':
-        return <Layout className="w-5 h-5 text-teal-600" />;
-      case 'Technology for Social Impact':
-        return <HeartHandshake className="w-5 h-5 text-rose-600" />;
       default:
         return <Compass className="w-5 h-5 text-[#2563EB]" />;
     }
@@ -70,10 +57,10 @@ export const MindsetSection: React.FC = () => {
           transition={{ duration: 0.4, delay: 0.1 }}
           className="mt-3 text-base text-[#57534E] max-w-2xl leading-relaxed"
         >
-          My technical focus is guided strictly by these seven areas of genuine curiosity and utility. I prefer building focused software over chasing transient trends.
+          I’m most interested in practical software engineering: useful interfaces, reliable backend services, applied AI, and interactive learning tools.
         </motion.p>
 
-        {/* Content: 7 Interests Cards Grid */}
+        {/* Content: Interests Cards Grid */}
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {MY_INTERESTS.map((interest, idx) => (
             <motion.div

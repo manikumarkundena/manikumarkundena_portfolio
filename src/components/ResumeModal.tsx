@@ -43,10 +43,10 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               <ShieldCheck className="w-5 h-5 text-emerald-600" />
               <div>
                 <h3 className="text-sm font-bold text-[#1C1A17]">
-                  Official Resume Document
+                  Portfolio Resume Preview
                 </h3>
                 <span className="text-[11px] text-[#78716C]">
-                  Ground-Truth Verified against Resume Source
+                  Portfolio profile · Updated November 2026
                 </span>
               </div>
             </div>
