@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { EXPERIENCE_DATA } from '../data/resumeData';
-import { Briefcase, Building2, Calendar, MapPin, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { Briefcase, Building2, Calendar, MapPin } from 'lucide-react';
 
 export const ExperienceSection: React.FC = () => {
   return (
@@ -40,7 +40,7 @@ export const ExperienceSection: React.FC = () => {
           transition={{ duration: 0.4, delay: 0.1 }}
           className="mt-3 text-base text-[#57534E] max-w-2xl leading-relaxed"
         >
-          Presented with 100% honesty. No title inflation, exaggerated leadership claims, or fabricated responsibilities.
+          Roles, responsibilities and experience.
         </motion.p>
 
         {/* Timeline Items */}
@@ -61,7 +61,7 @@ export const ExperienceSection: React.FC = () => {
                       {exp.type}
                     </span>
 
-                    {exp.isVerified && (
+                    {false && exp.isVerified && (
                       <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[10px] font-semibold bg-[#16A34A]/10 text-[#15803D]">
                         <ShieldCheck className="w-3 h-3" />
                         Grounded in Resume
