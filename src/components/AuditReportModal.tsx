@@ -39,10 +39,10 @@ export const AuditReportModal: React.FC<AuditReportModalProps> = ({
               </div>
               <div>
                 <h2 className="text-xl font-bold text-[#1C1A17]">
-                  Ground-Truth Resume Verification Report
+                  Profile Content Notes
                 </h2>
                 <p className="text-xs text-[#57534E] mt-0.5">
-                  Automated audit verifying zero fabrication, zero title inflation, and 100% adherence to resume truth.
+                  A guide to the information represented in this portfolio. Project status and learning stages are stated explicitly.
                 </p>
               </div>
             </div>
