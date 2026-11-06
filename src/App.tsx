@@ -66,7 +66,7 @@ export default function App() {
         {/* 5. Experience (Internship Studio, Ambassador, ScriptInk) */}
         <ExperienceSection />
 
-        {/* 6. Technical Skills (Strict Whitelist) */}
+        {/* 6. Technical Skills */}
         <SkillsSection />
 
         {/* 7. Contact */}
