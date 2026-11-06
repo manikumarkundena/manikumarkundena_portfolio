@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { PERSONAL_INFO, CERTIFICATIONS_DATA } from '../data/resumeData';
-import { GraduationCap, Award, MapPin, CheckCircle2, Bookmark, FileCheck } from 'lucide-react';
+import { GraduationCap, Award, MapPin, Bookmark } from 'lucide-react';
 
 export const JourneySection: React.FC = () => {
   return (
@@ -121,12 +121,12 @@ export const JourneySection: React.FC = () => {
             <div className="flex items-center gap-2 mb-6">
               <FileCheck className="w-5 h-5 text-[#2563EB]" />
               <h3 className="text-lg font-bold text-[#1C1A17]">
-                Verified Certifications & Badges
+                Certifications & Learning
               </h3>
             </div>
 
             <p className="text-xs text-[#78716C] mb-6 leading-relaxed">
-              Strictly grounded in resume records. No fabricated cloud architecture certificates or unearned credentials.
+              Selected certifications and learning milestones.
             </p>
 
             <div className="space-y-4">
