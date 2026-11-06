@@ -61,12 +61,6 @@ export const ExperienceSection: React.FC = () => {
                       {exp.type}
                     </span>
 
-                    {false && exp.isVerified && (
-                      <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[10px] font-semibold bg-[#16A34A]/10 text-[#15803D]">
-                        <ShieldCheck className="w-3 h-3" />
-                        Grounded in Resume
-                      </span>
-                    )}
                   </div>
 
                   <h3 className="text-xl sm:text-2xl font-bold text-[#1C1A17] tracking-tight">
