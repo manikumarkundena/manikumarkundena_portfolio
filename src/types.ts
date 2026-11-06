@@ -27,7 +27,6 @@ export interface ExperienceItem {
   location: string;
   description: string[];
   skillsUsed: string[];
-  isVerified: boolean;
 }
 
 export interface SkillGroup {
