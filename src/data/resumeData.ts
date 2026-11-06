@@ -1,4 +1,4 @@
-import { ProjectCaseStudy, ExperienceItem, SkillGroup, Certification, AuditEntry } from '../types';
+import { ProjectCaseStudy, ExperienceItem, SkillGroup, Certification } from '../types';
 
 export const PERSONAL_INFO = {
   name: 'Manikumar Kundena',
