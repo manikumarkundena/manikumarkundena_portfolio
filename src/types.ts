@@ -48,9 +48,3 @@ export interface Certification {
   credentialUrl?: string;
 }
 
-export interface AuditEntry {
-  section: string;
-  statement: string;
-  resumeGroundTruth: string;
-  status: 'Verified 100%' | 'Strictly Grounded';
-}
