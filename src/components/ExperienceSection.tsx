@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { EXPERIENCE_DATA } from '../data/resumeData';
-import { Briefcase, Building2, Calendar, MapPin } from 'lucide-react';
+import { Briefcase, Building2, Calendar, MapPin, CheckCircle2 } from 'lucide-react';
 
 export const ExperienceSection: React.FC = () => {
   return (
