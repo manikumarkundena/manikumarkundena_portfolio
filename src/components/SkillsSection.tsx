@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { TECHNICAL_SKILLS_GROUPS } from '../data/resumeData';
-import { Code, Terminal, Cpu, Database, Wrench } from 'lucide-react';
+import { Code, Terminal, Cpu, Database, Wrench, ShieldAlert } from 'lucide-react';
 
 export const SkillsSection: React.FC = () => {
   return (
