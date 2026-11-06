@@ -9,14 +9,12 @@ import { JourneySection } from './components/JourneySection';
 import { SkillsSection } from './components/SkillsSection';
 import { ContactSection } from './components/ContactSection';
 import { ResumeModal } from './components/ResumeModal';
-import { AuditReportModal } from './components/AuditReportModal';
 import { Footer } from './components/Footer';
 import { ProjectCaseStudy } from './types';
 
 export default function App() {
   const [selectedProject, setSelectedProject] = useState<ProjectCaseStudy | null>(null);
   const [resumeModalOpen, setResumeModalOpen] = useState<boolean>(false);
-  const [auditModalOpen, setAuditModalOpen] = useState<boolean>(false);
   const [activeSection, setActiveSection] = useState<string>('about');
 
   useEffect(() => {
@@ -46,7 +44,6 @@ export default function App() {
       {/* Sticky Header */}
       <Header
         onOpenResume={() => setResumeModalOpen(true)}
-        onOpenAudit={() => setAuditModalOpen(true)}
         activeSection={activeSection}
       />
 
@@ -55,7 +52,6 @@ export default function App() {
         {/* 1. Who I Am / Landing */}
         <Hero
           onOpenResume={() => setResumeModalOpen(true)}
-          onOpenAudit={() => setAuditModalOpen(true)}
         />
 
         {/* 2. What I Love Building / Genuine Interests */}
@@ -96,10 +92,6 @@ export default function App() {
       />
 
       {/* Audit Report Modal */}
-      <AuditReportModal
-        isOpen={auditModalOpen}
-        onClose={() => setAuditModalOpen(false)}
-      />
     </div>
   );
 }
