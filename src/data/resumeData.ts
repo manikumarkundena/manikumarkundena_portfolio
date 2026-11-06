@@ -310,7 +310,6 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
       'Collaborated on improving user experience flows and conducting usability checks on web interfaces.',
     ],
     skillsUsed: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS', 'Figma', 'Canva'],
-    isVerified: true,
   },
   {
     id: 'exp-google-ambassador',
@@ -325,7 +324,6 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
       'Served as a campus liaison for Google tools, developer resources, and student technology engagement.',
     ],
     skillsUsed: ['Google AI Studio', 'Generative AI', 'Community Outreach'],
-    isVerified: true,
   },
   {
     id: 'exp-scriptink',
@@ -340,7 +338,6 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
       'Managed participant data workflows and entry validation during live event registration campaigns.',
     ],
     skillsUsed: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS', 'Figma', 'Canva', 'Firebase', 'Supabase'],
-    isVerified: true,
   },
 ];
 
