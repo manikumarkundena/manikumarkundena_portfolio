@@ -76,7 +76,6 @@ export default function App() {
       {/* Footer */}
       <Footer
         onOpenResume={() => setResumeModalOpen(true)}
-        onOpenAudit={() => setAuditModalOpen(true)}
       />
 
       {/* Case Study Detail Modal */}
@@ -91,7 +90,6 @@ export default function App() {
         onClose={() => setResumeModalOpen(false)}
       />
 
-      {/* Audit Report Modal */}
     </div>
   );
 }
