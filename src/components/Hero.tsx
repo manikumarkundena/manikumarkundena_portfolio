@@ -4,6 +4,7 @@ import { PERSONAL_INFO } from '../data/resumeData';
 import {
   MapPin,
   GraduationCap,
+  Award,
   Github,
   Linkedin,
   Mail,
