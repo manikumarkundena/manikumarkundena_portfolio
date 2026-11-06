@@ -4,7 +4,6 @@ import { PERSONAL_INFO } from '../data/resumeData';
 import {
   MapPin,
   GraduationCap,
-  Award,
   Github,
   Linkedin,
   Mail,
@@ -20,7 +19,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
   return (
     <section id="about" className="pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top Status & Ground Truth pill */}
+        {/* Top status indicators */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,9 +31,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             CS Undergraduate @ Siddaganga Institute of Technology
           </span>
 
-          <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-[#16A34A]/10 text-[#15803D] border border-[#16A34A]/20">
-            <CheckCircle2 className="w-3.5 h-3.5" />
-            <span>CGPA: {PERSONAL_INFO.cgpa}</span>
+          <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium bg-[#F2EEE7] text-[#57534E] border border-[#E2DDD3]">
+            CGPA: {PERSONAL_INFO.cgpa}
           </span>
 
 
