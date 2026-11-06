@@ -29,7 +29,7 @@ export const SkillsSection: React.FC = () => {
           transition={{ duration: 0.4, delay: 0.05 }}
           className="text-3xl sm:text-4xl font-bold tracking-tight text-[#1C1A17]"
         >
-          Verified Technical Skills
+          Technical Skills & Current Learning
         </motion.h2>
 
         {/* Description */}
@@ -40,7 +40,7 @@ export const SkillsSection: React.FC = () => {
           transition={{ duration: 0.4, delay: 0.1 }}
           className="mt-3 text-base text-[#57534E] max-w-2xl leading-relaxed"
         >
-          Categorized strictly according to resume experience. No fabricated skill percentage bars, stars, or unearned frameworks.
+          Hands-on technologies are separated from current learning and foundational exposure.
         </motion.p>
 
         {/* Skills Groups Grid */}
@@ -91,7 +91,7 @@ export const SkillsSection: React.FC = () => {
         >
           <ShieldAlert className="w-4 h-4 text-[#2563EB] shrink-0" />
           <span>
-            <strong>Authenticity Guarantee:</strong> Unmentioned frameworks (such as Docker, Kubernetes, Microservices, or AWS) are intentionally excluded because they do not appear on Manikumar's resume.
+            <strong>Skill context:</strong> Spring Boot is currently being learned. Android is limited to foundational Android Basics with Jetpack Compose.
           </span>
         </motion.div>
       </div>
