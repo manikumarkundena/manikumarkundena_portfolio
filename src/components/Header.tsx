@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { PERSONAL_INFO } from '../data/resumeData';
-import { FileText, ShieldCheck, Menu, X, ArrowUpRight, Github, Linkedin, Mail } from 'lucide-react';
+import { FileText, Menu, X, Github, Linkedin, Mail } from 'lucide-react';
 
 interface HeaderProps {
   onOpenResume: () => void;
-  onOpenAudit: () => void;
   activeSection: string;
 }
 
 export const Header: React.FC<HeaderProps> = ({
   onOpenResume,
-  onOpenAudit,
   activeSection,
 }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -111,17 +109,8 @@ export const Header: React.FC<HeaderProps> = ({
             })}
           </nav>
 
-          {/* Actions: Resume & Ground Truth Audit */}
+          {/* Resume action */}
           <div className="hidden sm:flex items-center gap-2.5">
-            <button
-              onClick={onOpenAudit}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-[#2563EB] bg-[#2563EB]/8 border border-[#2563EB]/20 hover:bg-[#2563EB]/15 transition-all cursor-pointer"
-              title="View Resume Ground-Truth Verification Report"
-            >
-              <ShieldCheck className="w-3.5 h-3.5" />
-              <span>Resume Verified</span>
-            </button>
-
             <button
               onClick={onOpenResume}
               className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold text-[#FAF8F5] bg-[#1C1A17] hover:bg-[#2E2B27] active:scale-98 shadow-xs transition-all cursor-pointer"
@@ -183,21 +172,7 @@ export const Header: React.FC<HeaderProps> = ({
                 </button>
               ))}
 
-              <div className="pt-3 border-t border-[#E8E4DC] flex flex-col gap-2 mt-1">
-                <button
-                  onClick={() => {
-                    setMobileMenuOpen(false);
-                    onOpenAudit();
-                  }}
-                  className="flex items-center justify-between w-full px-4 py-2.5 rounded-lg text-xs font-medium text-[#2563EB] bg-[#2563EB]/10 border border-[#2563EB]/20"
-                >
-                  <span className="flex items-center gap-2">
-                    <ShieldCheck className="w-4 h-4" />
-                    <span>Ground Truth Verification Report</span>
-                  </span>
-                  <ArrowUpRight className="w-4 h-4" />
-                </button>
-
+              <div className="pt-3 border-t border-[#E8E4DC] mt-1">
                 <div className="flex items-center justify-around pt-2 text-[#78716C]">
                   <a
                     href={PERSONAL_INFO.github}
