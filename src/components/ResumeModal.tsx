@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { PERSONAL_INFO, MY_INTERESTS, TECHNICAL_SKILLS_GROUPS, PROJECTS_DATA, EXPERIENCE_DATA, CERTIFICATIONS_DATA } from '../data/resumeData';
-import { X, Download, Printer, ShieldCheck, Mail, MapPin, Github, Linkedin, ExternalLink } from 'lucide-react';
-import { downloadResumePDF, handleDirectResumeDownload } from '../utils/pdfGenerator';
+import { PERSONAL_INFO, TECHNICAL_SKILLS_GROUPS, PROJECTS_DATA, EXPERIENCE_DATA, CERTIFICATIONS_DATA } from '../data/resumeData';
+import { X, Download, Printer, Mail, MapPin, Github, Linkedin } from 'lucide-react';
+import { handleDirectResumeDownload } from '../utils/pdfGenerator';
 
 interface ResumeModalProps {
   isOpen: boolean;
@@ -14,10 +14,6 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
   const handlePrint = () => {
     window.print();
-  };
-
-  const handleDownload = () => {
-    downloadResumePDF();
   };
 
   return (
@@ -40,13 +36,13 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
           {/* Header Controls */}
           <div className="p-4 sm:p-6 bg-[#FAF8F5] border-b border-[#E8E4DC] flex items-center justify-between gap-4 no-print sticky top-0 z-20">
             <div className="flex items-center gap-2">
-              <ShieldCheck className="w-5 h-5 text-emerald-600" />
+              <FileText className="w-5 h-5 text-[#2563EB]" />
               <div>
                 <h3 className="text-sm font-bold text-[#1C1A17]">
                   Official Resume Document
                 </h3>
                 <span className="text-[11px] text-[#78716C]">
-                  Ground-Truth Verified against Resume Source
+                  View the current resume details
                 </span>
               </div>
             </div>
@@ -139,7 +135,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             {/* Technical Skills */}
             <div>
               <h2 className="text-xs font-bold uppercase tracking-wider text-[#1C1A17] mb-2 border-b border-[#E8E4DC] pb-1">
-                Technical Skills (Whitelisted)
+                Technical Skills
               </h2>
               <div className="space-y-1.5 text-xs text-[#44403C]">
                 {TECHNICAL_SKILLS_GROUPS.map((g) => (
