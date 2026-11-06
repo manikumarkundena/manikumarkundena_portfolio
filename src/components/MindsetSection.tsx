@@ -70,7 +70,7 @@ export const MindsetSection: React.FC = () => {
           transition={{ duration: 0.4, delay: 0.1 }}
           className="mt-3 text-base text-[#57534E] max-w-2xl leading-relaxed"
         >
-          My technical focus is guided strictly by these seven areas of genuine curiosity and utility. I prefer building focused software over chasing transient trends.
+          I’m most interested in practical software engineering: useful interfaces, reliable backend services, applied AI, and interactive learning tools.
         </motion.p>
 
         {/* Content: 7 Interests Cards Grid */}
