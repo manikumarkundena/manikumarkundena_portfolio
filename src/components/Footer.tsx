@@ -1,13 +1,12 @@
 import React from 'react';
 import { PERSONAL_INFO } from '../data/resumeData';
-import { ArrowUp, ShieldCheck, FileText, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowUp, FileText, Github, Linkedin, Mail } from 'lucide-react';
 
 interface FooterProps {
   onOpenResume: () => void;
-  onOpenAudit: () => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ onOpenResume, onOpenAudit }) => {
+export const Footer: React.FC<FooterProps> = ({ onOpenResume }) => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -68,13 +67,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenResume, onOpenAudit }) => 
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
           <div className="flex flex-wrap items-center gap-4 text-[#78716C]">
             <span>© {new Date().getFullYear()} Manikumar Kundena.</span>
-            <button
-              onClick={onOpenAudit}
-              className="inline-flex items-center gap-1 text-[#2563EB] hover:underline cursor-pointer"
-            >
-              <ShieldCheck className="w-3.5 h-3.5" />
-              <span>Resume Ground Truth Audit</span>
-            </button>
+
             <button
               onClick={onOpenResume}
               className="inline-flex items-center gap-1 text-[#1C1A17] hover:underline cursor-pointer"
