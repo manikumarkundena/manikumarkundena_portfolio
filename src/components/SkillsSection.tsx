@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { TECHNICAL_SKILLS_GROUPS } from '../data/resumeData';
-import { Code, Terminal, Cpu, Database, Wrench, ShieldAlert } from 'lucide-react';
+import { Code, Terminal, Cpu, Database, Wrench } from 'lucide-react';
 
 export const SkillsSection: React.FC = () => {
   return (
@@ -29,7 +29,7 @@ export const SkillsSection: React.FC = () => {
           transition={{ duration: 0.4, delay: 0.05 }}
           className="text-3xl sm:text-4xl font-bold tracking-tight text-[#1C1A17]"
         >
-          Verified Technical Skills
+          Technical Skills
         </motion.h2>
 
         {/* Description */}
